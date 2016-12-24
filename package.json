@@ -1,0 +1,40 @@
+{
+  "name": "list-em-all",
+  "version": "1.0.0",
+  "description": "Lists projects (or whatever you want, really) filtered by tags.",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jimkang/list-em-all.git"
+  },
+  "keywords": [],
+  "author": "Jim Kang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jimkang/list-em-all/issues"
+  },
+  "homepage": "https://github.com/jimkang/list-em-all",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "babelify": "^7.3.0",
+    "browserify": "^8.1.3",
+    "eslint": "^3.4.0",
+    "purify-css": "^1.1.9",
+    "tape": "^3.0.3",
+    "uglify-js": "^2.4.17"
+  },
+  "dependencies": {
+    "accessor": "^1.0.1",
+    "basic-browser-request": "^5.0.1",
+    "d3-selection": "^1.0.3",
+    "handle-error-web": "^1.0.0",
+    "js-yaml": "^3.7.0",
+    "lodash.intersection": "^4.4.0",
+    "qs": "^6.3.0",
+    "standard-bail": "^2.0.1",
+    "yamljs": "^0.2.8"
+  }
+}
