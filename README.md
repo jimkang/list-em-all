@@ -5,6 +5,14 @@ Lists projects (or whatever you want, really) filtered by tags.
 
 <img src="http://jimkang.com/list-em-all/list-em-all-screenshot.png" width="547" />
 
+Installation
+--------
+
+    npm install --save list-em-all
+
+API
+---
+
 This module provides two functions:
 
 - `loadList({url, yamlParseFn}, done)`, which takes a url, an optional yamlParseFn, like [yamljs.parse](https://www.npmjs.com/package/yamljs) or [js-yaml's `safeLoad`](https://www.npmjs.com/package/js-yaml). If you don't provide that opt, it will just use yamljs. It will load the yaml file at the url, which should have a [structure like this](http://jimkang.com/list-em-all/data/test.yaml) and pass it back to the callback as an array. The callback signature should be `(error, array)`.
@@ -23,6 +31,9 @@ This module provides two functions:
 [Code for those example apps.](https://github.com/jimkang/list-em-all/blob/gh-pages/app.js)
 
 The reason it's not a single function that's just "do it for me," is that it gives you the flexibility to filter or otherwise alter the loaded list before rendering, or to not load a list from YAML at all and just build it however you want.
+
+Format
+------
 
 The list elements need to each have the following properties:
 
