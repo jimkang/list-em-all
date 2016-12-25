@@ -3,7 +3,7 @@ list-em-all
 
 Lists projects (or whatever you want, really) filtered by tags.
 
-<img src="http://jimkang.com/list-em-all/list-em-all-screenshot.png" />
+<img src="http://jimkang.com/list-em-all/list-em-all-screenshot.png" width="547" />
 
 This module provides two functions:
 
