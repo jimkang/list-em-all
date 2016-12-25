@@ -31,7 +31,6 @@
     "basic-browser-request": "^5.0.1",
     "d3-selection": "^1.0.3",
     "handle-error-web": "^1.0.0",
-    "js-yaml": "^3.7.0",
     "lodash.intersection": "^4.4.0",
     "qs": "^6.3.0",
     "standard-bail": "^2.0.1",

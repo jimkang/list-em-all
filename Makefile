@@ -3,7 +3,7 @@ UGLIFY = ./node_modules/.bin/uglifyjs
 TRANSFORM_SWITCH = -t [ babelify --presets [ es2015 ] ]
 
 run:
-	wzrd app.js:index.js -- \
+	wzrd app.js -- \
 		-d \
 		$(TRANSFORM_SWITCH)
 
