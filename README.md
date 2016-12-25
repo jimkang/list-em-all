@@ -16,7 +16,7 @@ This module provides two functions:
 
 `render` is reentrant. You can call it multiple times with different `thingList`s, and it will handle removing the DOM elements representing things that are no longer in the list, adding DOM elements for things that are new to the list, and updating values for existing things in the list that have changed via [d3-selection](https://github.com/d3/d3-selection).
 
-[Here is an example that uses this module without any styling.](http://jimkang.com/list-em-all/unstyled.html). You can choose to apply any CSS you want to make your list render however you want. [Here is an example that does have styling.](http://jimkang.com/list-em-all/styled.html).
+[Here is an example that uses this module without any styling.](http://jimkang.com/list-em-all/unstyled.html#dataURL=http%3A%2F%2Fjimkang.com%2Flist-em-all%2Fdata%2Ftest.yaml) You can choose to apply any CSS you want to make your list render however you want. [Here is an example that does have styling.](http://jimkang.com/list-em-all/styled.html#dataURL=http%3A%2F%2Fjimkang.com%2Flist-em-all%2Fdata%2Ftest.yaml)
 
 [Code for those example apps.](https://github.com/jimkang/list-em-all/app.js)
 
