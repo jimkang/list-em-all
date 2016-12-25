@@ -1,21 +1,5 @@
 --- 
 - 
-  name: Non-Stop Scroll Shop
-  description: 
-    Do you like products? Do you like scrolling? How about infinite scrolling? Well, then! Come on down to Non-Stop Scroll Shop where we'll always have something new for you…forever.
-  urls: 
-    - 
-      name: Non-Stop Scroll Shop
-      url: http://nonstopscrollshop.com/
-    -
-      name: Non-Stop Scroll Bot
-      url: https://twitter.com/nonstopscrshop/
-  image: http://jimkang.com/list-em-all/data/example.png
-  tags: 
-    - web
-    - bot
-    - generative
-- 
   name: Get from Library!
   description: 
     A bookmarklet that cuts the friction between thinking you'd like to read a book and actually reading it.
@@ -39,4 +23,20 @@
   tags:
     - bot
     - twitter
+    - generative
+- 
+  name: Non-Stop Scroll Shop
+  description: 
+    Do you like products? Do you like scrolling? How about infinite scrolling? Well, then! Come on down to Non-Stop Scroll Shop where we'll always have something new for you…forever.
+  urls: 
+    - 
+      name: Non-Stop Scroll Shop
+      url: http://nonstopscrollshop.com/
+    -
+      name: Non-Stop Scroll Bot
+      url: https://twitter.com/nonstopscrshop/
+  image: http://jimkang.com/list-em-all/data/example.png
+  tags: 
+    - web
+    - bot
     - generative
