@@ -18,7 +18,7 @@ This module provides two functions:
 
 [Here is an example that uses this module without any styling.](http://jimkang.com/list-em-all/unstyled.html#dataURL=http%3A%2F%2Fjimkang.com%2Flist-em-all%2Fdata%2Ftest.yaml) You can choose to apply any CSS you want to make your list render however you want. [Here is an example that does have styling.](http://jimkang.com/list-em-all/styled.html#dataURL=http%3A%2F%2Fjimkang.com%2Flist-em-all%2Fdata%2Ftest.yaml)
 
-[Code for those example apps.](https://github.com/jimkang/list-em-all/app.js)
+[Code for those example apps.](https://github.com/jimkang/list-em-all/blob/gh-pages/app.js)
 
 The reason it's not a single function that's just "do it for me," is that it gives you the flexibility to filter or otherwise alter the loaded list before rendering, or to not load a list from YAML at all and just build it however you want.
 
