@@ -47,7 +47,8 @@ ul {
 
 .thing .tag-root a {
   color: #fb0c0c;
-  font-weight: bold;  
+  font-weight: bold;
+  cursor: pointer;
 }
 
 a:link {

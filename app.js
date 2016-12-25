@@ -35,7 +35,7 @@ function updateTags(tag) {
   window.location.hash = qs.stringify(routeDict);
 
   render({
-    thingData: allThings.filter(curry(hasTags)([tag])),
+    thingList: allThings.filter(curry(hasTags)([tag])),
     thingClass: 'thing',
     rootId: 'things-root',
     onTagClick: updateTags
@@ -53,7 +53,7 @@ function renderCurrentRoute() {
   }
 
   render({
-    thingData: thingsToRender,
+    thingList: thingsToRender,
     thingClass: 'thing',
     rootId: 'things-root',
     onTagClick: updateTags

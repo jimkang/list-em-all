@@ -1,0 +1,42 @@
+--- 
+- 
+  name: Non-Stop Scroll Shop
+  description: 
+    Do you like products? Do you like scrolling? How about infinite scrolling? Well, then! Come on down to Non-Stop Scroll Shop where we'll always have something new for you…forever.
+  urls: 
+    - 
+      name: Non-Stop Scroll Shop
+      url: http://nonstopscrollshop.com/
+    -
+      name: Non-Stop Scroll Bot
+      url: https://twitter.com/nonstopscrshop/
+  image: http://whatever.com/dot.jpg
+  tags: 
+    - web
+    - bot
+    - generative
+- 
+  name: Get from Library!
+  description: 
+    A bookmarklet that cuts the friction between thinking you'd like to read a book and actually reading it.
+  urls: 
+    -
+      name: Get from Library!
+      url: http://jimkang.com/get-from-library
+  image: ""
+  tags: 
+    - tool
+    - library
+-
+  name: "@godtributes"
+  description: >
+    <p>A bot that posts tributes to befitting each god! It reads (and watches) its followers' tweets for inspiration. This is my most popular bot.</p>
+    <p>@godtributes is a few Node processes. One maintains a database of what it has replied with and to whom and when it did it. Another is a proxy cache to the Wordnik API. Another generates the standalone tribute tweets. Yet another listens to a Twitter stream in real time and generates (or doesn't) tributes based on incoming tweets' text and images.</p>
+  urls:
+    -
+      name: "@godtributes"
+      url: https://twitter.com/godtributes/with_replies
+  tags:
+    - bot
+    - twitter
+    - generative

@@ -9,9 +9,9 @@ var getImage = accessor('image');
 var getDescription = accessor('description');
 function identity(x) { return x; }
 
-function render({thingData, rootId, thingClass, onTagClick}) {
+function render({thingList, rootId, thingClass, onTagClick}) {
   var root = d3.select('#' + rootId);
-  var things = root.selectAll('.' + thingClass).data(thingData, getName);
+  var things = root.selectAll('.' + thingClass).data(thingList, getName);
   things.exit().remove();
   var newThings = things.enter().append('li').classed(thingClass, true);
   
