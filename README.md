@@ -3,6 +3,8 @@ list-em-all
 
 Lists projects (or whatever you want, really) filtered by tags.
 
+<img src="http://jimkang.com/list-em-all/list-em-all-screenshot.png" />
+
 This module provides two functions:
 
 - `loadList({url, yamlParseFn}, done)`, which takes a url, an optional yamlParseFn, like [yamljs.parse](https://www.npmjs.com/package/yamljs) or [js-yaml's `safeLoad`](https://www.npmjs.com/package/js-yaml). If you don't provide that opt, it will just use yamljs. It will load the yaml file at the url, which should have a [structure like this](http://jimkang.com/list-em-all/data/test.yaml) and pass it back to the callback as an array. The callback signature should be `(error, array)`.
