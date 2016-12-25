@@ -1,11 +1,9 @@
-/* global jsyaml */
-
-YAML = require('yamljs');
+var YAML = require('yamljs');
 
 var request = require('basic-browser-request');
 var sb = require('standard-bail')();
 
-function loadList({url, yamlParseFn}, loadDone,) {
+function loadList({url, yamlParseFn}, loadDone) {
   if (!yamlParseFn) {
     yamlParseFn = YAML.parse;
   }

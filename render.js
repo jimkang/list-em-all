@@ -35,11 +35,14 @@ function render({thingData, rootId, thingClass, onTagClick}) {
 
   var tags = updateThings.select('.tag-root').selectAll('li').data(getTags, identity);
   tags.exit().remove();
-  var newTags = tags.enter().append('li').append('a');
+  var newTags = tags.enter().append('li');
+  newTags.append('a');
+
   if (onTagClick) {
     newTags.on('click', onTagClick);
   }
-  newTags.merge(tags).text(identity);
+
+  newTags.merge(tags).selectAll('a').text(identity);
 }
 
 module.exports = render;
