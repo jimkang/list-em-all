@@ -27,7 +27,8 @@ ul {
   padding: 1em;
   border-radius: 0.25em;
   margin-left: 0.5em;
-  max-width: 340px;
+  width: 340px;
+  flex-grow: 1;
   margin-right: 0.5em;
 }
 
