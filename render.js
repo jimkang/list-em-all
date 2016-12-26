@@ -2,8 +2,6 @@ var d3 = require('d3-selection');
 var accessor = require('accessor');
 
 var getName = accessor('name');
-var getURLs = accessor('urls');
-var getTags = accessor('tags');
 var getURL = accessor('url');
 var getImage = accessor('image');
 var getDescription = accessor('description');
@@ -43,6 +41,24 @@ function render({thingList, rootId, thingClass, onTagClick}) {
   }
 
   newTags.merge(tags).selectAll('a').text(identity);
+}
+
+function getURLs(thing) {
+  if (thing.urls) {
+    return thing.urls;
+  }
+  else {
+    return [];
+  }
+}
+
+function getTags(thing) {
+  if (thing.tags) {
+    return thing.tags;
+  }
+  else {
+    return [];
+  }
 }
 
 module.exports = render;

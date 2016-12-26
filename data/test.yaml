@@ -24,6 +24,15 @@
     - bot
     - twitter
     - generative
+-
+  name: Bot in the Street
+  description: >
+    <p>This bot comes up with different ways to fill out the "___ in the street but a ___ in the sheets" snowclone (originating from "a lady in the street but a freak in the sheets").</p>
+    <p>It picks a random word, then pairs that word with an antonym, rhyme, or cross-reference from the Wordnik API. It seems like that may be too crude to work, but it turns out that the human mind tries pretty hard to connect the dots when it comes to many things, including innuendo.</p>
+  tags:
+    - bot
+    - twitter
+    - generative
 - 
   name: Non-Stop Scroll Shop
   description: 
