@@ -14,8 +14,8 @@ function render({thingList, rootId, thingClass, onTagClick}) {
   var newThings = things.enter().append('li').classed(thingClass, true);
   
   newThings.append('div').classed('title', true);
-  newThings.append('div').classed('description', true);
   newThings.append('img').classed('image', true);
+  newThings.append('div').classed('description', true);
   newThings.append('ul').classed('link-root', true);    
   newThings.append('ul').classed('tag-root', true);
 
