@@ -3,7 +3,15 @@ var YAML = require('yamljs');
 var request = require('basic-browser-request');
 var sb = require('standard-bail')();
 
-function loadList({url, yamlParseFn}, loadDone) {
+function loadList(opts, loadDone) {
+  var yamlParseFn;
+  var url;
+
+  if (opts) {
+    yamlParseFn = opts.yamlParseFn;
+    url = opts.url;
+  }
+
   if (!yamlParseFn) {
     yamlParseFn = YAML.parse;
   }
