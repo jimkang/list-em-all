@@ -1,6 +1,6 @@
 {
   "name": "list-em-all",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Lists projects (or whatever you want, really) filtered by tags.",
   "main": "index.js",
   "scripts": {
