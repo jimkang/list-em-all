@@ -8,6 +8,7 @@
       name: Get from Library!
       url: http://jimkang.com/get-from-library
   image: ""
+  stamp: 2015-09-20
   tags: 
     - tool
     - library
@@ -16,6 +17,7 @@
   description: >
     <p>A bot that posts tributes to befitting each god! It reads (and watches) its followers' tweets for inspiration. This is my most popular bot.</p>
     <p>@godtributes is a few Node processes. One maintains a database of what it has replied with and to whom and when it did it. Another is a proxy cache to the Wordnik API. Another generates the standalone tribute tweets. Yet another listens to a Twitter stream in real time and generates (or doesn't) tributes based on incoming tweets' text and images.</p>
+  stamp: 2014-06-01
   urls:
     -
       name: "@godtributes"
@@ -37,7 +39,8 @@
   name: Non-Stop Scroll Shop
   description: 
     Do you like products? Do you like scrolling? How about infinite scrolling? Well, then! Come on down to Non-Stop Scroll Shop where we'll always have something new for you…forever.
-  urls: 
+  stamp: 2013-08-17
+  urls:
     - 
       name: Non-Stop Scroll Shop
       url: http://nonstopscrollshop.com/

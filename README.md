@@ -17,12 +17,13 @@ This module provides two functions:
 
 - `loadList({url, yamlParseFn}, done)`, which takes a url, an optional yamlParseFn, like [yamljs.parse](https://www.npmjs.com/package/yamljs) or [js-yaml's `safeLoad`](https://www.npmjs.com/package/js-yaml). If you don't provide that opt, it will just use yamljs. It will load the yaml file at the url, which should have a [structure like this](http://jimkang.com/list-em-all/data/test.yaml) and pass it back to the callback as an array. The callback signature should be `(error, array)`.
 
-- `render({thingList, rootId, thingClass, onTagClick})`, which takes:
+- `render({thingList, rootId, thingClass, onTagClick, formatDate})`, which takes:
 
   - A `thingList` array (if you're using `loadList`, it's just the array that was passed back to the callback)
   - The `rootId`, the id of the DOM element under which the list should be rendered.
   - `thingClass`, the CSS class that should be added to each list item DOM element that is rendered for each thing in `thingList`.
   - `onTagClick`, an optional callback that will be called each time a DOM element showing a tag is clicked. The callback will be passed the tag, which is a string.
+  - `formatDate`, an optional callback that will be passed Date objects and should return a string representing that date.
 
 `render` is reentrant. You can call it multiple times with different `thingList`s, and it will handle removing the DOM elements representing things that are no longer in the list, adding DOM elements for things that are new to the list, and updating values for existing things in the list that have changed via [d3-selection](https://github.com/d3/d3-selection).
 

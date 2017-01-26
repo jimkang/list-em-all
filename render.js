@@ -9,11 +9,18 @@ function identity(x) { return x; }
 
 function render(opts) {
   var thingList, rootId, thingClass, onTagClick;
+  var formatDate;
+
   if (opts) {
     thingList = opts.thingList;
     rootId = opts.rootId;
     thingClass = opts.thingClass;
     onTagClick = opts.onTagClick;
+    formatDate = opts.formatDate;
+  }
+
+  if (!formatDate) {
+    formatDate = defaultFormatDate;
   }
 
   var root = d3.select('#' + rootId);
@@ -22,6 +29,7 @@ function render(opts) {
   var newThings = things.enter().append('li').classed(thingClass, true);
   
   newThings.append('div').classed('title', true);
+  newThings.append('div').classed('stamp', true);
   newThings.append('img').classed('image', true);
   newThings.append('div').classed('description', true);
   newThings.append('ul').classed('link-root', true);    
@@ -29,6 +37,7 @@ function render(opts) {
 
   var updateThings = newThings.merge(things);
   updateThings.selectAll('.title').text(getName);
+  updateThings.selectAll('.stamp').text(getStamp);
   updateThings.selectAll('.description').html(getDescription);
   updateThings.selectAll('.image').attr('src', getImage);
 
@@ -49,6 +58,15 @@ function render(opts) {
   }
 
   newTags.merge(tags).selectAll('a').text(identity);
+
+  function getStamp(thing) {
+    if (thing.stamp) {
+      return formatDate(thing.stamp);
+    }
+    else {
+      return '';
+    }
+  }
 }
 
 function getURLs(thing) {
@@ -67,6 +85,10 @@ function getTags(thing) {
   else {
     return [];
   }
+}
+
+function defaultFormatDate(date) {
+  return date.toLocaleDateString();
 }
 
 module.exports = render;
