@@ -88,7 +88,7 @@ function getTags(thing) {
 }
 
 function defaultFormatDate(date) {
-  return date.toLocaleDateString();
+  return date.toUTCString();
 }
 
 module.exports = render;
